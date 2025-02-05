@@ -82,7 +82,7 @@ class steppable_browser_interface():
         logger.debug(f"Call action done in {time.time()-now:.2f}s")
 
     def action_goto_url(self, selector=None, value=None):
-        # self.page.set_viewport_size({"width": 1280, "height": 5000})
+        # self.page.set_viewport_size({"width": 1920, "height": 1080})
         now = time.time()
         response = self.page.goto(value, timeout=0, wait_until='load')
         # Should be the same as the puppeteer_fetch.js methods, means, load with no timeout set (skip timeout)
