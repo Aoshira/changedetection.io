@@ -1,4 +1,3 @@
-version: '3.2'
 services:
     changedetection:
       image: ghcr.io/dgtlmoon/changedetection.io
@@ -67,7 +66,7 @@ services:
   
       # Comment out ports: when using behind a reverse proxy , enable networks: etc.
       ports:
-        - 5000:5000
+        - 5003:5000
       restart: unless-stopped
 
      # Used for fetching pages via WebDriver+Chrome where you need Javascript support.
